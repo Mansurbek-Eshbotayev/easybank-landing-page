@@ -407,6 +407,9 @@ h1, h2, h3, h4, p {
 
 .header {
   background-color: white;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .header__inner {
@@ -439,7 +442,7 @@ h1, h2, h3, h4, p {
 }
 
 .nav__item {
-  padding: 32px 0;
+  padding: 25px 0;
 }
 
 .nav__link {
@@ -454,7 +457,7 @@ h1, h2, h3, h4, p {
 
 .nav__link:hover {
   color: #2D314D;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
   border-bottom: 4px solid #33d35e;
 }
 
@@ -494,7 +497,7 @@ h1, h2, h3, h4, p {
 
 @media only screen and (max-width: 960px) {
   .header {
-    padding: 22px;
+    padding: 20px 0;
   }
   .header__nav {
     display: none;
@@ -593,11 +596,11 @@ h1, h2, h3, h4, p {
 
 .bank__phone {
   position: absolute;
-  top: 411px;
+  top: 330px;
   right: 130px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 930px) {
   .bank__phone {
     display: none;
   }
@@ -664,7 +667,7 @@ h1, h2, h3, h4, p {
 }
 
 .easybank__text {
-  font-family: 'PublicSans';
+  font-family: 'Public Sans';
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.28125px;
@@ -742,7 +745,7 @@ h1, h2, h3, h4, p {
 }
 
 .list__text {
-  font-family: 'PublicSans';
+  font-family: 'Public Sans';
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.25px;
@@ -869,7 +872,7 @@ h1, h2, h3, h4, p {
 
 .info__by {
   display: block;
-  font-family: 'PublicSans';
+  font-family: 'Public Sans';
   font-size: 10px;
   line-height: 18px;
   letter-spacing: -0.15625px;
@@ -895,7 +898,7 @@ h1, h2, h3, h4, p {
 }
 
 .info__text {
-  font-family: 'PublicSans';
+  font-family: 'Public Sans';
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.203125px;
@@ -1008,7 +1011,7 @@ h1, h2, h3, h4, p {
 }
 
 .middle__link {
-  font-family: 'PublicSans';
+  font-family: 'Public Sans';
   font-size: 15px;
   line-height: 26px;
   letter-spacing: -0.234375px;

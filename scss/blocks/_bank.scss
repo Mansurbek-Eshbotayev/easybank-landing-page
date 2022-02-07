@@ -67,11 +67,11 @@
 
 .bank__phone{
   position: absolute;
-  top: 411px;
+  top: 330px;
     right: 130px;
 }
 
-@include media-max (1000px){
+@include media-max (930px){
   .bank__phone{
     display: none;
   }

@@ -26,7 +26,7 @@
 }
 
 .nav__item{
-  padding: 32px 0;
+  padding: 25px 0;
 }
 
 .nav__link{
@@ -39,7 +39,7 @@ transition: all 0.3s ease;
 
  &:hover{
    color: #2D314D;
-   padding-bottom: 30px;
+   padding-bottom: 22px;
    border-bottom: 4px solid rgba(51, 211, 94, 1);
  }
 
@@ -82,7 +82,7 @@ color: #FFFFFF;
 
 @include media-max (960px){
   .header{
-    padding: 22px;
+    padding: 20px 0;
   }
   .header__nav {
     display: none;
