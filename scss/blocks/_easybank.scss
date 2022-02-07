@@ -1,0 +1,136 @@
+.easybank{
+  height: 675px;
+  background-color: #F4F5F7;
+}
+
+.easybank__top{
+  width: 100%;
+  max-width: 635px;
+  padding-top: 96px;
+}
+
+.easybank__title{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 100;
+font-size: 40px;
+line-height: 64px;
+letter-spacing: -0.714286px;
+color: #2D314D;
+margin-bottom: 16px;
+}
+
+.easybank__text{
+  font-family: 'PublicSans';
+font-size: 18px;
+line-height: 28px;
+letter-spacing: -0.28125px;
+color: #9597A5;
+}
+
+.easybank__list{
+  margin: 0;
+  padding: 0;
+  padding-top: 185px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.easybank__item{
+  width: 100%;
+  max-width: 215px;
+  position: relative;
+}
+
+.easybank__item--one{
+
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background-image: url(../../images/card.svg);
+    width: 72px;
+    height: 72px;
+    bottom: 210px;
+  }
+
+}
+
+.easybank__item--two{
+
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background-image: url(../../images/phone.svg);
+    width: 72px;
+    height: 72px;
+    bottom: 210px;
+  }
+
+}
+
+.easybank__item--thri{
+
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background-image: url(../../images/man.svg);
+    width: 72px;
+    height: 72px;
+    bottom: 210px;
+  }
+
+}
+
+.easybank__item--four{
+
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background-image: url(../../images/big.svg);
+    width: 72px;
+    height: 72px;
+    bottom: 210px;
+  }
+
+}
+
+.list__title{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 100;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -0.428571px;
+color: #2D314D;
+margin-bottom: 25px;
+}
+
+.list__text{
+  font-family: 'PublicSans';
+font-size: 16px;
+line-height: 26px;
+letter-spacing: -0.25px;
+color: #9597A5;
+}
+
+@include media-max(980px){
+  .easybank__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .easybank__item{
+    margin-bottom: 150px;
+  }
+}
+
+@include media-max(470px){
+  
+}

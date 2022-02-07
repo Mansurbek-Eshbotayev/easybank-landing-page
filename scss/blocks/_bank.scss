@@ -1,0 +1,124 @@
+
+.bank{
+  height: 655px;
+  background-color: #FAFAFA;
+  background-image: url(../images/desktop.png);
+  background-repeat: no-repeat;
+  background-size: 1370px 955px;
+  background-position: calc(50% + 610px) calc(50% - 75px);
+}
+
+.bank__info{
+  width: 100%;
+  max-width: 447px;
+  padding-top: 170px;
+}
+
+.bank__title{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  
+  color: #2D314D;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.bank__text{
+  font-family: 'Public Sans';
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+  margin: 0;
+  margin-bottom: 44px;
+}
+
+.bank__href{
+  display: block;
+  width: 100%;
+  max-width: 163px;
+  background-image: url(../images/link.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.bank__link{
+  
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  
+}
+
+
+
+.bank__phone{
+  position: absolute;
+  top: 411px;
+    right: 130px;
+}
+
+@include media-max (1000px){
+  .bank__phone{
+    display: none;
+  }
+}
+
+@include media-max (750px){
+  .bank{
+    background-image: url(../images/mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(50% + 231px) calc(50% - 225px);
+  }
+
+  .header__hamburg-btn{
+    margin-right: 0;
+  }
+
+  .bank__title{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 38px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: -0.714286px;
+    
+    color: #2D314D;
+    margin-bottom: 16px;
+  }
+
+  .bank__text{
+    font-family: 'PublicSans';
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+text-align: center;
+letter-spacing: -0.234375px;
+
+color: #9597A5;
+  }
+
+  .bank__href{
+    margin: 0 auto;
+  }
+
+  .bank__info{
+    padding-top: 360px;
+  }
+}
