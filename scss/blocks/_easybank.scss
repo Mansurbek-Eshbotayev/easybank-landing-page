@@ -11,21 +11,21 @@
 
 .easybank__title{
   font-family: 'Public Sans';
-font-style: normal;
-font-weight: 100;
-font-size: 40px;
-line-height: 64px;
-letter-spacing: -0.714286px;
-color: #2D314D;
-margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: #2D314D;
+  margin-bottom: 16px;
 }
 
 .easybank__text{
   font-family: 'PublicSans';
-font-size: 18px;
-line-height: 28px;
-letter-spacing: -0.28125px;
-color: #9597A5;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
 }
 
 .easybank__list{
@@ -44,7 +44,7 @@ color: #9597A5;
 }
 
 .easybank__item--one{
-
+  
   &::before{
     content: '';
     position: absolute;
@@ -54,11 +54,11 @@ color: #9597A5;
     height: 72px;
     bottom: 210px;
   }
-
+  
 }
 
 .easybank__item--two{
-
+  
   &::before{
     content: '';
     position: absolute;
@@ -68,11 +68,11 @@ color: #9597A5;
     height: 72px;
     bottom: 210px;
   }
-
+  
 }
 
 .easybank__item--thri{
-
+  
   &::before{
     content: '';
     position: absolute;
@@ -82,11 +82,11 @@ color: #9597A5;
     height: 72px;
     bottom: 210px;
   }
-
+  
 }
 
 .easybank__item--four{
-
+  
   &::before{
     content: '';
     position: absolute;
@@ -96,41 +96,102 @@ color: #9597A5;
     height: 72px;
     bottom: 210px;
   }
-
+  
 }
 
 .list__title{
   font-family: 'Public Sans';
-font-style: normal;
-font-weight: 100;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: -0.428571px;
-color: #2D314D;
-margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2D314D;
+  margin-bottom: 25px;
 }
 
 .list__text{
   font-family: 'PublicSans';
-font-size: 16px;
-line-height: 26px;
-letter-spacing: -0.25px;
-color: #9597A5;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #9597A5;
 }
 
+
 @include media-max(980px){
+  .easybank{
+    height: 1530px;
+  }
   .easybank__list{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
+  
   .easybank__item{
     margin-bottom: 150px;
   }
 }
 
 @include media-max(470px){
+
+  .easybank{
+    height: 1380px;
+  }
+  
+  .easybank__top{
+    padding-top: 40px;
+  }
+  
+  .easybank__title{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.571429px;
+    color: #2D314D;
+  }
+  
+  .easybank__text{
+    font-family: 'PublicSans';
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+    color: #9597A5;
+  }
+
+  .easybank__item{
+    width: 100%;
+    max-width: 285px;
+  }
+  
+  .list__title{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+  }
+  
+  .list__text{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+  }
+
+  .easybank__item--one , .easybank__item--two ,
+  .easybank__item--thri , .easybank__item--four {
+    &::before{
+      left: 100px;
+      bottom: 170px;
+    }
+  }
   
 }
