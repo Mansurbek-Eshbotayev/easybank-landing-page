@@ -47,12 +47,13 @@
   
   &::before{
     content: '';
-    position: absolute;
+    // position: absolute;
+    display: block;
     z-index: 2;
-    background-image: url(../../images/card.svg);
+    background-image: url(../images/card.svg);
     width: 72px;
     height: 72px;
-    bottom: 210px;
+    margin-bottom: 40px;
   }
   
 }
@@ -61,12 +62,13 @@
   
   &::before{
     content: '';
-    position: absolute;
+    // position: absolute;
+    display: block;
     z-index: 2;
-    background-image: url(../../images/phone.svg);
+    background-image: url(../images/phone.svg);
     width: 72px;
     height: 72px;
-    bottom: 210px;
+    margin-bottom: 40px;
   }
   
 }
@@ -75,12 +77,13 @@
   
   &::before{
     content: '';
-    position: absolute;
+    // position: absolute;
+    display: block;
     z-index: 2;
-    background-image: url(../../images/man.svg);
+    background-image: url(../images/man.svg);
     width: 72px;
     height: 72px;
-    bottom: 210px;
+    margin-bottom: 40px;
   }
   
 }
@@ -89,12 +92,13 @@
   
   &::before{
     content: '';
-    position: absolute;
+    // position: absolute;
+    display: block;
     z-index: 2;
-    background-image: url(../../images/big.svg);
+    background-image: url(../images/big.svg);
     width: 72px;
     height: 72px;
-    bottom: 210px;
+    margin-bottom: 40px;
   }
   
 }
@@ -125,13 +129,38 @@
   }
   .easybank__list{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    // align-items: center;
     justify-content: center;
   }
   
   .easybank__item{
     margin-bottom: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@include media-max(550px){
+
+  .easybank__list{
+    padding-top: 0;
+    margin-top: 55px;
+  }
+
+  .easybank__item{
+    // margin: 0;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .easybank__item--one , .easybank__item--two ,
+  .easybank__item--thri , .easybank__item--four {
+    &::before{
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -194,4 +223,14 @@
     }
   }
   
+}
+
+@include media-max(320px){
+  .easybank__item--one , .easybank__item--two ,
+  .easybank__item--thri , .easybank__item--four {
+    &::before{
+      left: 80px;
+      bottom: 170px;
+    }
+  }
 }
